@@ -4,9 +4,9 @@ Web accessibility is the inclusive practice of ensuring that websites, tools, an
 
 ## Important aspects of "Accessibility"
 
-1. <ins>**Keyboard Navigation**</ins> – Users must be able to navigate the website by using a keyboard, helpful for those users who have difficulty in using the mouse. Toget more understanding of this point check out the examples below.
-    - Site is fully traversible using a key board. [Source Code](./keyboard-navigation/correct)
-    - Site is not traversible using a key board. [Source Code](./keyboard-navigation/incorrect)
+1. <ins>**Keyboard Navigation**</ins> – Users must be able to navigate the website by using a keyboard, helpful for those users who have difficulty in using the mouse. To get more understanding of this point check out the examples below.
+    - Site is fully traversible using a key board. See if you can use the site just by pressing the TAB key. [View](./keyboard-accessibility/correct)
+    - Site is not traversible using a key board. In this example user is not able to interact with all the visible elements on the page. [View](./keyboard-accessibility/incorrect)
 
 2. <ins>**Using correct HTML elements**</ins> – When developing the application always use correct HTML elements to serve the purpose. e.g.
     - Showing links – instead of having a &lt;p&gt; element with an `onClick(() => void)` handler make use of anchor element.  
