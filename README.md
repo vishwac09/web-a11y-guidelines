@@ -5,19 +5,19 @@ Web accessibility is the inclusive practice of ensuring that websites, tools, an
 ## Important aspects of "Accessibility"
 
 1. <ins>**Keyboard Navigation**</ins> – Users must be able to navigate the website by using a keyboard, helpful for those users who have difficulty in using the mouse. To get more understanding of this point check out the examples below.
-    - In this [example](./keyboard-accessibility/correct) the Site is fully traversible using a key board. See if you can use the site just by pressing the TAB key. [View](./keyboard-accessibility/correct)
-    - Site is not traversible using a key board. In this example user is not able to interact with all the visible elements on the page. [View](./keyboard-accessibility/incorrect)
+    - In this [example](https://vishwac09.github.io/web-a11y-guidelines/keyboard-accessibility/correct/index.html) the Site is fully traversible using a key board. See if you can use the site just by pressing the TAB key. [View](https://vishwac09.github.io/web-a11y-guidelines/keyboard-accessibility/correct/index.html)
+    - In this [example](https://vishwac09.github.io/web-a11y-guidelines/keyboard-accessibility/incorrect/index.html) user is unable to interact with all the visible elements on the page. [View](https://vishwac09.github.io/web-a11y-guidelines/keyboard-accessibility/incorrect/index.html)
 
 2. <ins>**Using correct HTML elements**</ins> – When developing the application always use correct HTML elements to serve the purpose. e.g.
     - Use proper elements to represent the correct click action.
 
-      <ins>Bad approach</ins>
+      <ins>**Bad approach**</ins>
       ```html
       <p style="styled-button" onClick="() => clickHandler();">
         Click Me
       </p>
       ```
-      <ins>Good approach</ins>
+      <ins>**Good approach**</ins>
       ```html
       <button style="styled-button" onClick="() => clickHandler();">
         Click Me
@@ -26,13 +26,13 @@ Web accessibility is the inclusive practice of ensuring that websites, tools, an
 
     - Links must be represented using anchor links.
     
-      <ins>Bad approach</ins>
+      <ins>**Bad approach**</ins>
       ```html
       <p style="styled-link" onClick="() => clickHandler();">
         Goto Home
       </p>
       ```
-      <ins>Good approach</ins>
+      <ins>**Good approach**</ins>
       ```html
       <a href="/home" style="styled-link">
         Goto Home
@@ -41,13 +41,13 @@ Web accessibility is the inclusive practice of ensuring that websites, tools, an
 
     - Use &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt; tags as page headings instead of using &lt;p&gt; tag with a styled font.
 
-      <ins>Bad approach</ins>
+      <ins>**Bad approach**</ins>
       ```html
       <p style="styled-heading">
         Hello World
       </p>
       ```
-      <ins>Good approach</ins>
+      <ins>**Good approach**</ins>
       ```html
       <h1>Hello World</h1>
       <h2>More Hello World</h2>
