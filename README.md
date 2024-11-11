@@ -9,7 +9,32 @@ Web accessibility is the inclusive practice of ensuring that websites, tools, an
     - Site is not traversible using a key board. In this example user is not able to interact with all the visible elements on the page. [View](./keyboard-accessibility/incorrect)
 
 2. <ins>**Using correct HTML elements**</ins> – When developing the application always use correct HTML elements to serve the purpose. e.g.
-    - Showing links – instead of having a &lt;p&gt; element with an `onClick(() => void)` handler make use of anchor element.  
+    - Use proper elements to represent the correct click action.</br>
+    <ins>Bad approach</ins>
+    ```js
+    <p style="styled-button" onClick="() => clickHandler();">
+      Click Me
+    </p>
+    ```
+    <ins>Good approach</ins>
+    ```js
+    <button style="styled-button" onClick="() => clickHandler();">
+      Click Me
+    </button>
+    ```
+    - Links must be represented using anchor links.
+    <ins>Bad approach</ins>
+    ```js
+    <p style="styled-link" onClick="() => clickHandler();">
+      Goto Home
+    </p>
+    ```
+    <ins>Good approach</ins>
+    ```js
+    <a href="/home" style="styled-link">
+      Goto Home
+    </a>
+    ```
     - Use &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt; tags as page headings instead of using &lt;p&gt; tag with a styled font.
 
 3. <ins>**Include Aria-tags whenever possible**</ins> – These tags are read by the screen-readers and other assistive tools to inform the user the purpose of the selected/focused element. Screen readers read the text currently visible on the screen or any other section focused by the user. Users having visual impairments usually use screen readers to understand the application.  
