@@ -1,0 +1,219 @@
+<!DOCTYPE html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="./../../styles/app-style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Wars</title>
+  <script type="text/javascript">
+    document.addEventListener('readystatechange', event => {
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    });
+  </script>
+</head>
+<body>
+  <div class="app flex flex-col">
+    <div class="header-wrapper p-20">
+      <div class="header flex flex-row justify-between">
+        <!-- logo/icon -->
+        <div class="flex flex-row justify-left gap-20">
+          <a href="/" class="align-item-center text-20"></a>
+          <img src="./../../assets/site-logo.png" width="200px" alt="Star wars"/>
+        </a>
+      </div>
+      <div>
+        <p class="text-highlight">This page cannot be traversed using keyboard</p>
+      </div>
+      <!-- menu -->
+      <div class="flex flex-row justify-left">
+        <ul class="menu-list text-20">
+          <li class="menu-list-item"><a href="#episodes" class="link-default">Episodes</a></li>
+          <li class="menu-list-item"><a href="#heroes" class="link-default">Heroes</a></li>
+          <li class="menu-list-item"><a href="#vehicles" class="link-default">Vehicles</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="main-content p-20">
+    <div id="intro">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+      <p>
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+        Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+      </p>
+    </div>
+    <div id="episodes" class="text-center mt-40">
+      <h2>Episodes</h2>
+      <div class="m-auto">
+        <ul class="episode-list">
+          <li>
+            <div class="episode-card">
+              <div class="episode-image">
+                <img src="./../../assets/ep1.jpeg" width="150px" alt="Move - Epsiode 1 The Phantom menace" />
+              </div>
+              <h3 class="title">Episode 1 - The Phantom menace</h3>
+              <p class="description">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="episode-card">
+              <div class="episode-image">
+                <img src="./../../assets/ep2.jpeg" width="150px" alt="Move - Episode 2 Attack of the clones" />
+              </div>
+              <h3 class="title">Episode 2 - Attack of the clones</h3>
+              <p class="description">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="episode-card">
+              <div class="episode-image">
+                <img src="./../../assets/ep3.jpeg" width="150px" alt="Move - Episode 3 Revenge of the Sith" />
+              </div>
+              <h3 class="title">Episode 3 - Revenge of the Sith</h3>
+              <p class="description">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="episode-card">
+              <div class="episode-image">
+                <img src="./../../assets/ep4.jpeg" width="150px" alt="Move - Episode 4 A new Hope" />
+              </div>
+              <h3 class="title">Episode 4 - A new Hope&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+              <p class="description">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="episode-card">
+              <div class="episode-image">
+                <img src="./../../assets/ep5.jpeg" width="150px" alt="Move - Episde 5 The empire strikes back" />
+              </div>
+              <h3 class="title">Episode 5 - The empire strikes back</h3>
+              <p class="description">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="episode-card">
+              <div class="episode-image">
+                <img src="./../../assets/ep6.jpeg" width="150px" alt="Move - Episde 6 Return of the Jedii" />
+              </div>
+              <h3 class="title">Episode 6 - Episde 6 Return of the Jedii</h3>
+              <p class="description">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="heroes" class="text-center mt-40">
+      <h2>Heroes</h2>
+      <div class="m-auto">
+        <ul class="heroes-list">
+          <li>
+            <div class="hero-card">
+              <div class="hero-image">
+                <img src="./../../assets/yoda.jpg" width="150px" alt="Charcter Yodo" />
+              </div>
+              <h3 class="title">Yoda</h3>
+              <p class="description">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="hero-card">
+              <div class="hero-image">
+                <img src="./../../assets/vader.jpg" width="150px" alt="Charcter Darth Vader" />
+              </div>  
+              <h3 class="title">Darth Vader</h3>
+              <p class="description">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="hero-card">
+              <div class="hero-image">
+                <img src="./../../assets/chewbacca.png" width="150px" alt="Charcter Chewbacca" />
+              </div>
+              <h3 class="title">Chewbacca</h3>
+              <p class="description">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="hero-card">
+              <div class="hero-image">
+                <img src="./../../assets/soldier.png" width="150px" alt="Charcter Soldier" />
+              </div>
+              <h3 class="title">Soldier</h3>
+              <p class="description">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="hero-card">
+              <div class="hero-image">
+                <img src="./../../assets/storm_trooper.jpg" width="150px" alt="Charcter Storm tropper" />
+              </div>
+              <h3 class="title">Storm Trooper</h3>
+              <p class="description">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="vehicles" class="text-center mt-40">
+      <h2>Vehicles</h2>
+      <div class="m-auto">
+        <ul class="vehicle-list">
+          <li>
+            <div class="vehicle-card">
+              <div class="vehicle-image">
+                <img src="./../../assets/t-fighter.jpg" width="150px" alt="Vehicle Tee fighter" />
+              </div>
+              <h3 class="title">Tee Fighter</h3>
+              <p class="description">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="vehicle-card">
+              <div class="vehicle-image">
+                <img src="./../../assets/death_star.jpg" width="150px" alt="Vehicle Death Star" />
+              </div>
+              <h3 class="title">Dearh Star</h3>
+              <p class="description">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    StarWars Inc. Copyright <span id="year"></span>
+  </div>
+</div>
+</body>
+</html>
