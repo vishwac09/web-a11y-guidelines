@@ -53,16 +53,64 @@ Web accessibility is the inclusive practice of ensuring that websites, tools, an
       <h2>More Hello World</h2>
       ```
 
-3. <ins>**Include Aria-tags whenever possible**</ins> – These tags are read by the screen-readers and other assistive tools to inform the user the purpose of the selected/focused element. Screen readers read the text currently visible on the screen or any other section focused by the user. Users having visual impairments usually use screen readers to understand the application.  
-    - Example: - Register form – How do inform the user if a field is required inside the form?  
-    - Image ALT text - All images must have an alt text explaining what the image is.  
+3. <ins>**Include Aria-tags whenever possible**</ins> – These tags are read by the screen-readers and other assistive tools to inform the user the purpose of the selected/focused element. Screen readers read the text currently visible on the screen or any other section that is focused by the user. Users having visual impairments usually use screen readers to understand the application flow.
+    - **aria-activedescendant**
+    - **aria-disabled** - The aria-disabled state indicates that the element is perceivable but   disabled, so it is not editable or otherwise operable.<br>
+      <ins>**Usage**</ins>
+      ```html
+      <label for="user-age">Enter the age!</label>
+      <input type="textfield" aria-disabled="false" name="age" value="" id="user-age" />
+      <!-- acceptable values true/false/mixed -->
+      <!-- https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-disabled -->
+      ```
+    - **aria-expanded** - The aria-expanded attribute is set on an element to indicate if a control is expanded or collapsed, and whether or not the controlled elements are displayed or hidden.
+      <ins>**Usage**</ins>
+      ```html
+      <div class="menu-wrapper">
+        <button aria-haspopup="true" aria-expanded="true/false" onClick="open the below menu">
+            Sports
+        </button>
+      </div>
+      <ul id="menu">
+        <li>Cricket</li>
+        <li>Football</li>
+      </ul>
+      ```
+    - **aria-haspopup** - The aria-haspopup attribute indicates the availability and type of interactive popup element that can be triggered by the element on which the attribute is set.<br>
+      <ins>**Usage**</ins>
+      ```html
+      <div class="form-register">
+        <input type="textfield" aria-disabled="false" name="birthday" value="" id="birthday" />
+        <img src="calendar-icon" onClick="toggle calendar" aria-haspopup="true"/>
+      </div>
+      <div id="calendar"></div>
+      ```
+    - **aria-hidden** - The aria-hidden state indicates whether the element is exposed to an  accessibility API.<br>
+      <ins>**Usage**</ins>
+      ```html
+      <button>
+        <!-- Screen reader ignores the following element -->
+        <span class="fa fa-tweet" aria-hidden="true"></span>
+        <span class="label"> Tweet </span>
+      </button>
+      ```
+    - aria-label
+    - aria-labelledby
+    - aria-level
+    - aria-live
+    - **aria-pressed**
+    - aria-modal
+    - aria-required
+    - aria-invalid
+    - aria-describedby
+    - aria-controls
+    - aria-autocomplete
+    - aria-owns
 
-4. <ins>**Responsiveness**</ins> - Application must be responsive.  
+4. <ins>**Measurement units**</ins> - Font sizes / Width / Heights must be referenced using rem as the unit, opposed to using pixels. Conversion 16px => 1rem. https://nekocalc.com/px-to-rem-converter.
 
-5. <ins>**Color**</ins> - Choosing the right color combination / contrast – responsibility of the design team. 
+5. <ins>**Responsiveness**</ins> - Responsive web design is about creating web pages that look good on all devices!. A responsive web design will automatically adjust for different screen sizes and viewports.
 
-6. <ins>**Measurement units**</ins> - Font sizes / Width / Heights must be referenced using rem as the unit, opposed to using pixels. Conversion 16px => 1rem. https://nekocalc.com/px-to-rem-converter  
+6. <ins>**Color**</ins> - Choosing the right color combination / contrast ratio – responsibility of the design team. 
 
 By making websites accessible, we can create a more inclusive and equitable digital world for everyone. 
-
- 
