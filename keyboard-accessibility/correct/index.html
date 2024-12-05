@@ -1,7 +1,7 @@
 <!DOCTYPE html lang="en">
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="./../../styles/app-style.css" />
+  <link rel="stylesheet" type="text/css" href="./../../styles/app-style.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Star Wars</title>
   <script type="text/javascript">
@@ -12,19 +12,19 @@
 </head>
 <body>
   <div class="app flex flex-col">
-    <div class="header-wrapper p-20">
+    <div class="header-wrapper">
       <div class="header flex flex-row justify-between">
         <!-- logo/icon -->
-        <div class="flex flex-row justify-left gap-20">
+        <div class="justify-left gap-20">
           <a href="/" class="align-item-center text-20"></a>
-          <img src="./../../assets/site-logo.png" width="200px" alt="Star wars"/>
+          <img class="site-logo" src="./../../assets/site-logo.png" alt="Star wars"/>
         </a>
       </div>
-      <div>
+      <div class="hide-mobile">
         <p class="text-highlight">Press TAB keyboard key to interact with elements.</p>
       </div>
       <!-- menu -->
-      <div class="flex flex-row justify-left">
+      <div class="flex flex-row justify-left menu-list-block">
         <ul class="menu-list text-20">
           <li class="menu-list-item"><a href="#episodes" class="link-default">Episodes</a></li>
           <li class="menu-list-item"><a href="#heroes" class="link-default">Heroes</a></li>
@@ -201,7 +201,7 @@
               <div class="vehicle-image">
                 <img src="./../../assets/death_star.jpg" width="150px" alt="Vehicle Death Star" />
               </div>
-              <h3 class="title">Dearh Star</h3>
+              <h3 class="title">Death Star</h3>
               <p class="description">
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
               </p>

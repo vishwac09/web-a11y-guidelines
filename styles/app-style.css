@@ -69,6 +69,10 @@ body {
   padding: 1.25rem;
 }
 
+.py-20 {
+  padding: 1.25rem 0px;
+}
+
 .mt-40 {
   margin-top: 2.5rem;
 }
@@ -95,6 +99,7 @@ a:hover {
 /* Menu */
 .menu-list {
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .menu-list-item {
@@ -148,4 +153,55 @@ ul li {
 
 .text-highlight {
   color: var(--red);
+}
+
+.site-logo {
+  width: 200px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 1.25rem;
+  gap: 30px;
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.25rem 0px;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .menu-list-block {
+    background-color: #000000;
+  }
+  .menu-list-item a {
+    color: #FFFFFF;
+  }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.25rem 0px;
+  }
+  .site-logo {
+    width: 150px;
+    height: 100px;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .menu-list-block {
+    background-color: #000000;
+  }
+  .menu-list-item a {
+    color: #FFFFFF;
+  }
 }
