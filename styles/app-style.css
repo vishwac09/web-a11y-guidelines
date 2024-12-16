@@ -176,6 +176,9 @@ ul li {
   .hide-mobile {
     display: none;
   }
+  .menu-list {
+    margin: 0 auto;
+  }
   .menu-list-block {
     background-color: #000000;
   }
@@ -197,6 +200,9 @@ ul li {
   }
   .hide-mobile {
     display: none;
+  }
+  .menu-list {
+    margin: 0 auto;
   }
   .menu-list-block {
     background-color: #000000;
